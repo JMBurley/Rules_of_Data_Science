@@ -9,9 +9,9 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 
 
 ## Why should you trust my opinions?
-You probably shouldn’t trust anyone’s opinions purely from their background (there a (logical fallacy)[https://en.wikipedia.org/wiki/Argument_from_authority] about that), but background certainly helps set a baseline expectation of reliability.
+You probably shouldn’t trust anyone’s opinions purely from their background (there a [logical fallacy](https://en.wikipedia.org/wiki/Argument_from_authority) about that), but background certainly helps set a baseline expectation of reliability.
 
-I’ve spent >15 years on science, strategy consulting, building models of physical processes, and data science.  My time in strategy consulting was when (“big data” became a thing)[https://trends.google.com/trends/explore?date=all&geo=US&q=big%20data] and I was the frontline consultant doing analysis and creating new methods in my firm.  I ran data science projects in the Foundry.ai studio building prototype AI systems with several Fortune 500 companies and spoke with people from CEOs, through division heads, to frontline staff to make AI projects with positive ROI within 12 months.  Currently, I am head of data science at a start-up with a few million in revenue.  
+I’ve spent >15 years on science, strategy consulting, building models of physical processes, and data science.  My time in strategy consulting was when [“big data” became a thing](https://trends.google.com/trends/explore?date=all&geo=US&q=big%20data) and I was the frontline consultant doing analysis and creating new methods in my firm.  I ran data science projects in the Foundry.ai studio building prototype AI systems with several Fortune 500 companies and spoke with people from CEOs, through division heads, to frontline staff to make AI projects with positive ROI within 12 months.  Currently, I am head of data science at a start-up with a few million in revenue.  
 
 I also did well on the UK nationally televised TV quiz “University Challenge”, which sounds like it should be irrelevant, save that the weird brain trick of being good at quizzes is about collating information and synthesising patterns into best guesses,  which is basically what a “Rules of Data Science” is.
 
