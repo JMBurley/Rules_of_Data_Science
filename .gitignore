@@ -1,0 +1,12 @@
+# Mac exclusions
+*.DS_Store
+
+# Local virtual environment
+venv/
+.python-version
+
+# Distribution / packaging
+.eggs/
+dist/
+actifai_models.egg-info/
+.env
