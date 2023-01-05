@@ -5,7 +5,7 @@ Lorem ipsum
 
 ## The Rules of Data Science
 <details>
-  <summary> *Here is a rule* </summary>
+  <summary><b>Here is a rule</b></summary> 
   
   Explanatory text
    - bullet point
