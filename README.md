@@ -20,14 +20,16 @@ I also did well on the UK nationally televised TV quiz “University Challenge�
 <details>
   <summary><b>You will be better at data science if you think of it as decision science.</b></summary> 
   
-  Explanatory text
-   - bullet point
-   - _italic_
-   - **bold**
-  ### Some Code
-  ```python
-  print('hello world')
-  ```
+  The most important part of data science is the “so what?” of your discovery.  What should be done differently because of this, and how can that change be realised?  Seen this way, the entire toolkit of data science is focused on making better decisions and changing outcomes.
+
+  For example, consider a model to forecast equipment failures. It can be tempting to think of improving the accuracy of a model as a KPI that proves we have done well, but it isn’t: what matters is how much the model improves the real world result, what decision it allows us to make differently that creates value.  It might not be valuable to forecast equipment failures more accurately if the forecast is significantly shorter than the lead time to deliver and install the part (downtime due to breakages is unchanged), or if precision:recall tradeoffs determine value more than does accuracy, or any one of a number of complications unique to the equipment we are trying to forecast failure on.
+  
+  The entire problem of “forecasting equipment failure” should have been considered as “how to maximise the value of the equipment?” and the overall context analysed to look for decisions that might be altered to create value:  AI to forecast equipment failure at the individual level, analysis of which maintenance activities are most impactful, changing the intensity at which equipment runs to arbitrage lifespan against productivity, flexible schedules on maintenance teams, altering the distribution of parts in warehouses, etc…  
+  
+  Thinking of the core problem as finding the right decision and then making it correctly expands the data scientist’s view in impactful ways.  Talk to stakeholders to understand the operations we will be changing, create consensus among change leaders who need to believe in a project for it to work, reject modelling efforts that can’t be impactful even if accurate.
+  
+  In the average project most of the value comes from a good understanding of the business problem, the product and the data, combined with the interpersonal skills to get stakeholders to commit to the correct decision.
+
 </details>
 
 <details>
