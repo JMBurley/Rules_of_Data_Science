@@ -28,6 +28,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
   <summary><b>Any data source will degrade to the point marginally above where it impacts business critical activities and KPIs.</b></summary> 
   
   AKA **Burley’s Law of Data Degradation** (I talk about this one a lot...).
+
   Overall, the quality of a company’s data will degrade to the point just shy of impacting daily operations.  The data that a business needs for mission-critical operations will be in good working order and the data that does not impact critical initiatives will almost certainly not be.
   
   There are two main reasons for this: 
@@ -60,7 +61,8 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 <details>
   <summary><b>Models are (almost never) a true understanding of the underlying dynamics. </b></summary> 
   
-  AKA _“All models are wrong, but some models are useful”_
+  AKA _“All models are wrong, but some models are useful.”_
+
   See: next two rules ”Models are terrible at extrapolation” “Models are a snapshot of inferred relationships”.  Best practice in response to this is understanding & accepting those limitations and planning accordingly.
 
   At time of writing (Dec 2022), this rule is correct.  But we may see future model architectures that can better provide causative understanding of systems and extrapolate in a more reasonable fashion.
