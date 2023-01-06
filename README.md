@@ -1,14 +1,14 @@
 
 ## Introduction
-These rules of data science are intended as advice to make you a better data scientist or better understand data science if you work with data scientists. Some of them are facts (eg. "models are terrible at extrapolation") and some of them are heuristics (eg. "You will be better at data science if you think of it as decision science").  Each of these `rules` is something I have high certainty is important and will make a meaningful change to the quality of work you output.
+These rules of data science are intended as advice to make you a better data scientist or better understand data science if you work with data scientists. Some of them are facts (eg. "models are terrible at extrapolation") and some of them are heuristics (eg. "You will be better at data science if you think of it as decision science").
 
 In the interests of memorability each `rule` is listed as a pithy, single-sentence assertion.
 
-Of course, single-sentence assertions are neither evidence nor a particularly good way for a reader to understand the underlying dynamics if the assertion does not immediately resonate with their own experience.  Therefore you can click each "Rule" to open an expanded section that briefly explains the reasoning behind it.  These sections are a balance between brevity and completeness that leans towards brevity at the expense of considering all edge cases or when the rule might not apply; I want to equip you with enough information to decide when & if you will make use of the rule.  Even I do not think these are cast iron rules that are true in all situations all of the time (although some of them are close to it!), be thoughtful and make use of them as best suits you.
+Of course, single-sentence assertions are neither evidence nor a particularly good way for a reader to understand the underlying dynamics if the assertion does not immediately resonate with their own experience.  Therefore you can click each "Rule" to open an expanded section that briefly explains the reasoning behind it.  These sections are a balance between brevity and completeness that leans towards brevity at the expense of considering all edge cases or when the rule might not apply; I want to equip you with enough information to decide if & when you will make use of the rule.  Even I do not think these are cast iron rules that are true in all situations all of the time (although some of them are close to it!), be thoughtful and make use of them as best suits you.
 
 
 
-## The Rules of Data Science
+## :books: The Rules of Data Science :books:
 <details>
   <summary><b>You will be better at data science if you think of it as decision science.</b></summary> 
   
@@ -43,11 +43,29 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 </details>
 
 <details>
-  <summary><b>Comment code so an idiot can understand it (the idiot will probably be you)</b></summary> 
+  <summary><b>Comment code so an idiot can understand it (the idiot will probably be you).</b></summary> 
   
   Closely related to Guido Van Rossum’s famous _“code is read more often than it is written”_, we should make our code as unambiguous as possible.  It is rarely an inefficient use of time to typehint, write detailed docstrings, and add comments.  The writer will spend far less time on the commenting than the next reader will spend understanding the code.
 
   In case further motivation were needed, the time you save is most often your own when you come back to use/modify your own prior work.  Furthermore, the process of writing typehints and comments will often make you realise something is unnecessarily unclear, inefficient or inextensible and allow immediate corrections.
+</details>
+
+<details>
+  <summary><b>People are expensive, computers are cheap.</b></summary> 
+  
+  A data scientist or software engineer costs tens-to-hundreds of $/£/€ per hour and storage+compute cost orders of magnitude less.  
+  
+  Bear this in mind when thinking of optimisations -- spending a week of person-time to save $10pcm on cloud fees is a terrible investment.  The best optimisations are ones that make staff more efficient.  We should be happy to pay for more compute resources to fix a problem or leave code slower than it could be, because this is how we make the most value long term.
+  
+ The justifiable times to work on compute efficiency options typically are one of following, which are (mostly) about identifying the downstream effects of inefficient code rather than the direct cost:
+  
+   -  "A stitch in time saves nine":  A refactor now is much simpler than later, so the work is a people-saving measure.  We are favorably arbitraging current vs future person time.
+   -  "Loathed systems": Human concentration can be a fragile thing and waiting on a compute process for 5 mins can ruin human workflows. As can instability, unclear UX or bad error handling.  When there is a process users don't like, consider improving the code quality.
+   -  "Business critical":  A few extra hours of compute time doesn't matter until it is the difference between an overnight system update being ready for business in the morning.  We are not worried about the compute cost, we are worried about a business revenue stream.
+   - "Actually computers are expensive":  Sometimes the monthly compute bill is larger than staff costs (you'll know if it is) and compute efficiencies are well worth the staff time they require.
+  
+ To be clear, this rule is **not** an excuse to rapidly write shoddy code (that will mire your team in technical debt and scaling problems), nor is it an excuse for management to allow a rickety codebase to persist unpatched and barely stable.  It is about making decisions that best make use of the resources available to us taking an accurate view of their costs, and offering a heavy reminder that we frequently underestimate the expensive of our staff.
+  
 </details>
 
 <details>
@@ -87,15 +105,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 </details>
 
 <details>
-  <summary><b>Understand that data scientists can be scary and annoying.</b></summary> 
-  
-  When a data scientist starts looking into a topic at a company, we have a nasty habit of finding all the accumulated mistakes and generating extra work for other staff as we investigate why data is the way it is.  Depending on the mistakes found, staff might fear we are damaging their reputation and career.  Approach this the wrong way and people will not be enthusiastic collaborators.
-
-  Best practice is to focus on the improvements that can be made (not past mistakes), have empathy for the past constraints and openly praise the great work that you find in your investigations.  If reporting fundamental shortcomings to management, be honest but explain the “why” of how we got there and the path to improvement.  This will get everyone better results faster and is the first step on making a transformation to a data-driven division/company.
-</details>
-
-<details>
-  <summary><b>Data cleaning is mostly data understanding.</b></summary> 
+  <summary><b>Data cleaning is actually data understanding.</b></summary> 
   
   Cleaning is, for most of us, an unfortunate chore (happy to have it done but rarely happy about doing it) and framing part of our data science workflow as "cleaning" creates an aversion that is harmful.
 
@@ -109,6 +119,20 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
    - knowledge of the data is as important as the transformations applied, document those important pieces of provenance and data-gotchas;
    - every choice made in data cleaning should be documented;
    - cleaning transforms are as important as feature engineering transforms (they should be reusable and well-commented).
+</details>
+
+<details>
+  <summary><b>End users are more important than the model.</b></summary> 
+  
+  [link to decision bit; models/findings only have impact if used/implemented;  should talk to people before during and after model design.]
+</details>
+
+<details>
+  <summary><b>Be a positive collaborator with non data scientists.</b></summary> 
+  
+  When a data scientist starts looking into a topic at a company, we have a nasty habit of finding all the accumulated mistakes and generating extra work for other staff as we investigate why data is the way it is.  Depending on the mistakes found, staff might fear we are damaging their reputation and career.  Approach this the wrong way and people will not be enthusiastic collaborators.
+
+  Best practice is to focus on the improvements that can be made (not past mistakes), have empathy for the past constraints and openly praise the great work that you find in your investigations.  If reporting fundamental shortcomings to management, be honest but explain the “why” of how we got there and the path to improvement.  This will get everyone better results faster and is the first step on making a transformation to a data-driven division/company.
 </details>
 
 <details>
@@ -130,7 +154,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 
 
 
-## Why should you trust my opinions?
+## Why should you trust my opinions? 🤔
 You probably shouldn’t trust anyone’s opinions purely from their background (there a [logical fallacy](https://en.wikipedia.org/wiki/Argument_from_authority) about that), but background certainly helps set a baseline expectation of reliability.
 
 I’ve spent >15 years on science, strategy consulting, building models of physical processes, and data science.  My time in strategy consulting was when [“big data” became a thing](https://trends.google.com/trends/explore?date=all&geo=US&q=big%20data) and I was the frontline consultant doing analysis and creating new methods in my firm.  I ran data science projects in the Foundry.ai studio building prototype AI systems with several Fortune 500 companies and spoke with people from CEOs, through division heads, to frontline staff to make AI projects with positive ROI within 12 months.  Currently, I am head of data science at a start-up with a few million in revenue.  
