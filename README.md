@@ -9,6 +9,8 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 
 
 ## :books: The Rules of Data Science :books:
+[Click to see reasoning behind each rule]
+
 <details>
   <summary><b>You will be better at data science if you think of it as decision science.</b></summary> 
   
