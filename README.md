@@ -1,6 +1,6 @@
 
 ## Introduction
-These rules of data science are intended as advice to make you a better data scientist or better understand data science if you work with data scientists. Some of them are facts (eg. "models are terrible at extrapolation") and some of them are heuristics (eg. "You will be better at data science if you think of it as decision science").
+These rules of data science are intended as advice to make you a better data scientist or better understand data science. Some of them are facts (eg. "models are terrible at extrapolation") and some of them are heuristics (eg. "You will be better at data science if you think of it as decision science").  
 
 In the interests of memorability each `rule` is listed as a pithy, single-sentence assertion.
 
@@ -39,7 +39,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
   
   As a data scientist, internalising this fundamental paranoia about data sources is one of the key ways experienced staff are better at the job.  
 
-  On a technical level, project timelines should include significant data cleaning ([data understanding](internal link to rule)) for a new product and ongoing products need a plan to maintain data quality.
+  On a technical level, project timelines should include significant data cleaning ([data understanding](https://github.com/JMBurley/Rules_of_Data_Science/blob/a2fee7ee46ae63f2ab4bff85413f8223ca8e8886/README.md?plain=1#L110)) for a new product and ongoing products need a plan to maintain data quality.
 
   On a professional level, data scientists should accept that an existing data source being below the quality we need is rarely due to malice or incompetence; it is the result of a smart prioritisation of resources.  Take time to understand why things are the way they are and you will be a better collaborator and get great results faster.
 </details>
@@ -67,7 +67,6 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
    - "Actually computers are expensive":  Sometimes the monthly compute bill is larger than staff costs (you'll know if it is) and compute efficiencies are well worth the staff time they require.
   
  To be clear, this rule is **not** an excuse to rapidly write shoddy code (that will mire your team in technical debt and scaling problems), nor is it an excuse for management to allow a rickety codebase to persist unpatched and barely stable.  It is about making decisions that best make use of the resources available to us taking an accurate view of their costs, and offering a heavy reminder that we frequently underestimate the expensive of our staff.
-  
 </details>
 
 <details>
@@ -111,7 +110,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
   
   Cleaning is, for most of us, an unfortunate chore (happy to have it done but rarely happy about doing it) and framing part of our data science workflow as "cleaning" creates an aversion that is harmful.
 
-  "Cleaning" implies that the cleaned data is sole result, that the data starting off dirty was an aberrant mistake if we could get a genie to magic up clean data with no human memory of how it was cleaned we could be productive data scientists focused on the "real work".
+  "Cleaning" implies that the cleaned data is sole result, that the data starting off dirty was an aberrant mistake and if we could get a genie to magic up clean data with no human memory of how it was cleaned we could be more productive data scientists focused on the "real work".
 
   But data cleaning is selectively choosing and applying tranformations to create the best possible MECE dataset for downstream analysis and models.  And that is anything but trivial, it's the foundation for decision-making (recall we are really decision scientists).  Doing that means understanding the data, and considered that way it is obvious that "cleaning" isn't a menial chore but one of the most important parts of getting a good model. That's an important mindset change that make you more attentive and happier when doing it.
 
@@ -121,12 +120,28 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
    - knowledge of the data is as important as the transformations applied, document those important pieces of provenance and data-gotchas;
    - every choice made in data cleaning should be documented;
    - cleaning transforms are as important as feature engineering transforms (they should be reusable and well-commented).
+   
+   PS. It is tempting to demarcate data cleaning as bug catching (removing outliers, bad columns, and imputing missing data), and not diagnostic analystics or deep understanding of data.  To be clear, this rule asserts that there is a continuous chain of understanding from finding outliers to creating features that should not be conceptually split into disparate chunks.  Rather than data cleaning I'd suggest talking about discrete tasks (eg. find outliers).
+</details>
+
+<details>
+  <summary><b>Provenance is a keystone concept.</b></summary> 
+  
+  Academic historians have a precise, technical use for provenance that every data scientist should know.  Provenance is the lineage of data: what is it, who made it, for what purpose and when, and how has it moved from creation to us (corollary: what data has not made it to us).
+
+  Provenance is critical to understanding the bias, context, accuracy, and reliability of data.  A data scientist who understands the concept of provenance can ask better questions of a data source and more cleanly explain to non-specialists where problems might lie.
+
+  Without having the lens of provenance to reconsider what we know and how do we think we know it, we are at much higher risk of using data inappropriate for the task at hand, or drawing (wrong?) conclusions at artificially high levels of certainty.
 </details>
 
 <details>
   <summary><b>End users are more important than the model.</b></summary> 
   
-  [link to decision bit; models/findings only have impact if used/implemented;  should talk to people before during and after model design.]
+  Models and data findings only have impact if they are used/implemented -- a highly skillful model with zero adoption is far less valuable than a moderately skillful model that is highly adopted by end users -- therefore good decision science must create change for end-users.
+
+  While the exact nature of implementing change at an organisation is the topic of entire books and careers, for data scientists considering end-users is a good way to start on this journey.
+
+  Considering how end-users will be asked to alter behaviour in response to data can direct us to the pain points (that may prevent adoption) or the key stakeholders (who need to support the project for it to succeed).  Early career data scientists can look to identify these and flag for their managers.  Data science leadership must be able to get buy-in to solve these problems (either yourself or cultivating an ally who can.  This is why CEO support makes-or-breaks many data projects).  At all levels, it is best practice for data scientists to talk to relevant stakeholders before, during, and after the data/model work.
 </details>
 
 <details>
