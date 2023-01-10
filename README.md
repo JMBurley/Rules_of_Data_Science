@@ -12,7 +12,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 [Click to see reasoning behind each rule]
 
 <details>
-  <summary><b>You will be better at data science if you think of it as decision science.</b></summary> 
+  <summary><b>1. You will be better at data science if you think of it as decision science.</b></summary> 
   
   The most important part of data science is the “so what?” of your discovery.  What should be done differently because of this, and how can that change be realised?  Seen this way, the entire toolkit of data science is focused on making better decisions and changing outcomes.
 
@@ -27,7 +27,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 
 
 <details>
-  <summary><b>Any data source will degrade to the point marginally above where it impacts business critical activities and KPIs.</b></summary> 
+  <summary><b>2. Any data source will degrade to the point marginally above where it impacts business critical activities and KPIs.</b></summary> 
   
   AKA **Burley’s Law of Data Degradation** (I talk about this one a lot...).
 
@@ -45,7 +45,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 </details>
 
 <details>
-  <summary><b>Comment code so an idiot can understand it (the idiot will probably be you).</b></summary> 
+  <summary><b>3. Comment code so an idiot can understand it (the idiot will probably be you).</b></summary> 
   
   Closely related to Guido Van Rossum’s famous _“code is read more often than it is written”_, we should make our code as unambiguous as possible.  It is rarely an inefficient use of time to typehint, write detailed docstrings, and add comments.  The writer will spend far less time on the commenting than the next reader will spend understanding the code.
 
@@ -53,7 +53,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 </details>
 
 <details>
-  <summary><b>People are expensive, computers are cheap.</b></summary> 
+  <summary><b>4. People are expensive, computers are cheap.</b></summary> 
   
   A data scientist or software engineer costs tens-to-hundreds of $/£/€ per hour and storage+compute cost orders of magnitude less.  
   
@@ -70,7 +70,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 </details>
 
 <details>
-  <summary><b>Machine Learning is rebranded statistics.</b></summary> 
+  <summary><b>5. Machine Learning is rebranded statistics.</b></summary> 
   
   The business use of statistics used to be hours-to-months of human time in order to make a prediction or determine if a hypothesis was true.  It required data that was causally related to the problem and, at best, Mutually-Exclusive & Completely Exhaustive (MECE).
 
@@ -78,7 +78,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 </details>
 
 <details>
-  <summary><b>Models are (almost never) a true understanding of the underlying dynamics. </b></summary> 
+  <summary><b>6. Models are (almost) never a true understanding of the underlying dynamics. </b></summary> 
   
   AKA _“All models are wrong, but some models are useful.”_
 
@@ -88,7 +88,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 </details>
 
 <details>
-  <summary><b>Models are terrible at extrapolation.</b></summary> 
+  <summary><b>7. Models are terrible at extrapolation.</b></summary> 
   
   Machine learning models work by freeform fitting to observed data (save rare examples where you embed a causal structure in the model: say enforcing a radial kernel in a SVM or the recent “physically-motivated neural network” trend).  We can think of this, fairly accurately, as creating a very long complex formula to interpolate between known datapoints (train set) to perform well on similar datapoints (test set).
 
@@ -96,7 +96,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 </details>
 
 <details>
-  <summary><b>Models are a snapshot of inferred relationships.</b></summary> 
+  <summary><b>8. Models are a snapshot of inferred relationships.</b></summary> 
 
   Models optimise to match the results seen in their input data, based on the mathematical structure of the model.  They do not posit any true causal understanding of the relationships between variables or how those relationships might change when unseen external factors alter.  
 
@@ -106,7 +106,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 </details>
 
 <details>
-  <summary><b>Data cleaning is actually data understanding.</b></summary> 
+  <summary><b>9. Data cleaning is actually data understanding.</b></summary> 
   
   Cleaning is, for most of us, an unfortunate chore (happy to have it done but rarely happy about doing it) and framing part of our data science workflow as "cleaning" creates an aversion that is harmful.
 
@@ -125,7 +125,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 </details>
 
 <details>
-  <summary><b>Provenance is a keystone concept.</b></summary> 
+  <summary><b>10. Provenance is a keystone concept.</b></summary> 
   
   Academic historians have a precise, technical use for provenance that every data scientist should know.  Provenance is the lineage of data: what is it, who made it, for what purpose and when, and how has it moved from creation to us (corollary: what data has not made it to us).
 
@@ -135,7 +135,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 </details>
 
 <details>
-  <summary><b>End users are more important than the model.</b></summary> 
+  <summary><b>11. End users are more important than the model.</b></summary> 
   
   Models and data findings only have impact if they are used/implemented -- a highly skillful model with zero adoption is far less valuable than a moderately skillful model that is highly adopted by end users -- therefore good decision science must create change for end-users.
 
@@ -145,7 +145,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 </details>
 
 <details>
-  <summary><b>Be a positive collaborator with non data scientists.</b></summary> 
+  <summary><b>12. Be a positive collaborator with non data scientists.</b></summary> 
   
   When a data scientist starts looking into a topic at a company, we have a nasty habit of finding all the accumulated mistakes and generating extra work for other staff as we investigate why data is the way it is.  Depending on the mistakes found, staff might fear we are damaging their reputation and career.  Approach this the wrong way and people will not be enthusiastic collaborators.
 
@@ -153,7 +153,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 </details>
 
 <details>
-  <summary><b>Try to make your boss redundant.</b></summary> 
+  <summary><b>14. Try to make your boss redundant.</b></summary> 
   
   Which could be rephrased as “anticipate your boss’ needs”. This is not a data science specific rule, but is important enough to include regardless.
 
