@@ -14,7 +14,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 <details>
   <summary><b>1. You will be better at data science if you think of it as decision science.</b></summary> 
   
-  The most important part of data science is the “so what?” of your discovery.  What should be done differently because of this, and how can that change be realised?  Seen this way, the entire toolkit of data science is focused on making better decisions and changing outcomes.
+  The most important part of data science is the “so what?” of your discovery.  What should be done differently because of this, and how can that change be realised?  Seen this way, **the entire toolkit of data science is focused on making better decisions and changing outcomes**.
 
   For example, consider a model to forecast industrial equipment failures. It can be tempting to think of improving the accuracy of a model as a KPI that proves we have done well, but it isn’t: what matters is how much the model improves the real world result, what decision it allows us to make differently that creates value.  It might not be valuable to forecast equipment failures more accurately if the forecast is significantly shorter than the lead time to deliver and install the part (downtime due to breakages is unchanged), or if precision:recall tradeoffs determine value more than does accuracy, or any one of a number of complications unique to the equipment we are trying to forecast failure on.
   
@@ -22,7 +22,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
   
   Thinking of the core problem as finding the right decision and then making it correctly expands the data scientist’s view in impactful ways.  Talk to stakeholders to understand the operations we will be changing, create consensus among change leaders who need to believe in a project for it to work, reject modelling efforts that can’t be impactful even if accurate.
   
-  In the average project most of the value comes from a good understanding of the business problem, the product and the data, combined with the interpersonal skills to get stakeholders to commit to the correct decision.
+  In the average project most of the value comes from a good understanding of the business problem, the product, and the data, combined with the interpersonal skills to get stakeholders to commit to the correct decision.
 </details>
 
 
@@ -59,14 +59,14 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
   
   Bear this in mind when thinking of optimisations -- spending a week of person-time to save $10pcm on cloud fees is a terrible investment.  The best optimisations are ones that make staff more efficient.  We should be happy to pay for more compute resources to fix a problem or leave code slower than it could be, because this is how we make the most value long term.
   
- The justifiable times to work on compute efficiency options typically are one of following, which are (mostly) about identifying the downstream effects of inefficient code rather than the direct cost:
+ The justifiable times to work on compute efficiency are typically one of following, which are mostly about identifying the downstream effects of inefficient code rather than the direct cost:
   
-   -  "A stitch in time saves nine":  A refactor now is much simpler than later, so the work is a people-saving measure.  We are favorably arbitraging current vs future person time.
-   -  "Loathed systems": Human concentration can be a fragile thing and waiting on a compute process for 5 mins can ruin human workflows. As can instability, unclear UX or bad error handling.  When there is a process users don't like, consider improving the code quality.
-   -  "Business critical":  A few extra hours of compute time doesn't matter until it is the difference between an overnight system update being ready for business in the morning.  We are not worried about the compute cost, we are worried about a business revenue stream.
-   - "Actually computers are expensive":  Sometimes the monthly compute bill is larger than staff costs (you'll know if it is) and compute efficiencies are well worth the staff time they require.
+   -  _"A stitch in time saves nine"_:  A refactor now is much simpler than later, so the work is a people-saving measure.  We are favorably arbitraging current vs future person time.
+   -  _"Loathed systems"_: Human concentration can be a fragile thing and waiting on a compute process for 5 mins can ruin human workflows. As can instability, unclear UX or bad error handling.  When there is a process users don't like, consider improving the code quality.
+   -  _"Business critical"_:  A few extra hours of compute time doesn't matter until it is the difference between an overnight system update being ready for business in the morning.  We are not worried about the compute cost, we are worried about a business revenue stream.
+   - _"Actually computers are expensive"_:  Sometimes the monthly compute bill is larger than staff costs (you'll know if it is) and compute efficiencies are well worth the staff time they require.
   
- To be clear, this rule is **not** an excuse to rapidly write shoddy code (that will mire your team in technical debt and scaling problems), nor is it an excuse for management to allow a rickety codebase to persist unpatched and barely stable.  It is about making decisions that best make use of the resources available to us taking an accurate view of their costs, and offering a heavy reminder that we frequently underestimate the expensive of our staff.
+ To be clear, this rule is **not** an excuse to rapidly write shoddy code (that will mire your team in technical debt and scaling problems), nor is it an excuse for management to allow a rickety codebase to persist unpatched and barely stable.  It is about making decisions that best make use of the resources available to us taking an accurate view of their costs, and offering a heavy reminder that we frequently underestimate the expense of our staff.
 </details>
 
 <details>
@@ -157,7 +157,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
   
   Which could be rephrased as “anticipate your boss’ needs”. This is not a data science specific rule, but is important enough to include regardless.
 
-  Typically your boss will spend some amount of time thinking about your work: verifying correctness, deciding the next priority, tracking timelines, (etc…), and some amount of time doing differentiated work that only she can do:  her own technical work, planning organisation-level resources, getting buy-in on projects and removing roadblocks.  The more you can proactively take over the former tasks such that your boss doesn’t have to do them, or you provide curated inputs to make her tasks faster, the better.  This will make you more aware of the context of your work within the larger organisation (always good personal growth) and is commonly aligned with promotion requirements in larger companies.  Plus, if your company is well-organised you are enabling both you and your boss to spend more time on more valuable work
+  Typically your boss will spend some amount of time thinking about your work: verifying correctness, deciding the next priority, tracking timelines, (etc…), and some amount of time doing differentiated work that only she can do:  her own technical work, planning organisation-level resources, getting buy-in on projects and removing roadblocks.  The more you can proactively take over the former tasks such that your boss doesn’t have to do them, or you provide curated inputs to make her tasks faster, the better.  This will make you more aware of the context of your work within the larger organisation (always good personal growth) and is commonly aligned with promotion requirements in larger companies.  Plus, if your company is well-organised you are enabling both you and your boss to spend more time on more valuable work.
 </details>
 
 
@@ -174,6 +174,6 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 ## Why should you trust my opinions? 🤔
 You probably shouldn’t trust anyone’s opinions purely from their background (there a [logical fallacy](https://en.wikipedia.org/wiki/Argument_from_authority) about that), but background certainly helps set a baseline expectation of reliability.
 
-I’ve spent >13 years on science, strategy consulting, building models of physical processes, and data science.  My time in strategy consulting was when [“big data” became a thing](https://trends.google.com/trends/explore?date=all&geo=US&q=big%20data) in the early 2010's and I was the frontline consultant doing analysis and creating new methods in my firm.  At the Foundry.ai studio I ran data science projects building prototype AI systems addressing annual revenue in the $50M-1.1B range with several Fortune 500 companies and spoke with people from CEOs, through division heads, to frontline staff to make AI projects with positive ROI within 12 months.  Currently, I am head of data science at a [start-up](https://www.actif.ai/our-story/) with a few million in revenue.  
+I’ve spent >13 years on science, strategy consulting, building models of physical processes, and data science.  My time in strategy consulting was when [“big data” became a thing](https://trends.google.com/trends/explore?date=all&geo=US&q=big%20data) in the early 2010's and I was the frontline consultant doing analysis and creating new methods in my firm.  I have implemented data science projects building prototype AI systems addressing annual revenue in the $50M-1.1B range with several Fortune 500 companies and spoke with CEOs, division heads, and frontline staff to make AI projects with positive ROI within 12 months.  Currently, I am [head of data science at a start-up](https://www.actif.ai/our-story/) with a few million in revenue.  
 
 I also did well on the UK nationally televised TV quiz “University Challenge”. Which sounds like it should be irrelevant, save that the weird brain trick of being good at quizzes is about collating information and synthesising patterns into best guesses,  which is basically what a “Rules of Data Science” is.
