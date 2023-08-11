@@ -16,7 +16,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
   
   The most important part of data science is the “so what?” of your discovery.  What should be done differently because of this, and how can that change be realised?  Seen this way, **the entire toolkit of data science is focused on making better decisions and changing outcomes**.
 
-  For example, consider a model to forecast industrial equipment failures. It can be tempting to think of improving the accuracy of a model as a KPI that proves we have done well, but it isn’t: what matters is how much the model improves the real world result, what decision it allows us to make differently that creates value.  It might not be valuable to forecast equipment failures more accurately if the forecast is significantly shorter than the lead time to deliver and install the part (downtime due to breakages is unchanged), or if precision:recall tradeoffs determine value more than does accuracy, or any one of a number of complications unique to the equipment we are trying to forecast failure on.
+  For example, consider a model to forecast industrial equipment failures. It can be tempting to think of improving the accuracy of a model as a KPI that proves we have done well, but it isn’t: what matters is how much the model improves the real world result, what decision it allows us to make differently that creates value.  It might not be valuable to forecast equipment failures more accurately if the forecast is significantly shorter than the lead time to deliver and install the part (downtime due to breakages is barely changed), or if precision:recall tradeoffs determine value more than does accuracy, or any one of a number of complications unique to the equipment we are trying to forecast failure on.
   
   The entire problem of “forecasting equipment failure” should have been considered as “how to maximise the value of the equipment?” and the overall context analysed to look for decisions that might be altered to create value:  AI to forecast equipment failure at the individual level, analysis of which maintenance activities are most impactful, changing the intensity at which equipment runs to arbitrage lifespan against productivity, flexible schedules on maintenance teams, altering the distribution of parts in warehouses, etc…  
   
@@ -57,7 +57,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
   
   A data scientist or software engineer costs tens-to-hundreds of $/£/€ per hour and storage+compute cost orders of magnitude less.  
   
-  Bear this in mind when thinking of optimisations -- spending a week of person-time to save $10pcm on cloud fees is a terrible investment.  The best optimisations are ones that make staff more efficient.  We should be happy to pay for more compute resources to fix a problem or leave code slower than it could be, because this is how we make the most value long term.
+  Bear this in mind when thinking of optimisations -- spending a week of person-time to save $10pcm on cloud fees is a terrible investment.  The best optimisations are ones that make staff more efficient.  We should be happy to pay for more compute resources to fix a problem or leave code slower than it could be, because it allows staff to spend their time on higher value workstreams.
   
  The justifiable times to work on compute efficiency are typically one of following, which are mostly about identifying the downstream effects of inefficient code rather than the direct cost:
   
@@ -110,16 +110,16 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
   
   Cleaning is, for most of us, an unfortunate chore (happy to have it done but rarely happy about doing it) and framing part of our data science workflow as "cleaning" creates an aversion that is harmful.
 
-  "Cleaning" implies that the cleaned data is sole result, that the data starting off dirty was an aberrant mistake and if we could get a genie to magic up clean data with no human memory of how it was cleaned we could be more productive data scientists focused on the "real work".
+  "Cleaning" implies that the cleaned data is the sole result, that the data starting off dirty was an aberrant mistake and if we could get a genie to magic up clean data with no human memory of how it was cleaned we could be more productive data scientists focused on the "real work".
 
-  But data cleaning is selectively choosing and applying tranformations to create the best possible MECE dataset for downstream analysis and models.  And that is anything but trivial, it's the foundation for decision-making (recall we are really decision scientists).  Doing that means understanding the data, and considered that way it is obvious that "cleaning" isn't a menial chore but one of the most important parts of getting a good model. That's an important mindset change that make you more attentive and happier when doing it.
+  But data cleaning is selectively choosing and applying tranformations to create the best possible MECE dataset for downstream analysis and models.  And that is anything but trivial, it's the foundation for decision-making (recall we are really decision scientists).  Doing that means understanding the data, and considered that way it is obvious that "cleaning" isn't a menial chore but one of the most important parts of getting a good model. That's an important mindset change that makes you more attentive and happier when doing it.
 
   Data cleaning is therefore data understanding (and all the actions you take after understanding the data) and you can't possibly skip "understanding" when doing data science.
 
   There are some important corollaries to knowing that cleaning is about understanding the dataset:
    - knowledge of the data is as important as the transformations applied, document those important pieces of provenance and data-gotchas;
    - every choice made in data cleaning should be documented;
-   - cleaning transforms are as important as feature engineering transforms (they should be reusable and well-commented).
+   - cleaning transforms are as important as feature engineering transforms (they should be reusable, well-commented, and tested).
    
    PS. It is tempting to demarcate data cleaning as bug catching (removing outliers, bad columns, and imputing missing data), and not diagnostic analystics or deep understanding of data.  To be clear, this rule asserts that there is a continuous chain of understanding from finding outliers to creating features that should not be conceptually split into disparate chunks.  Rather than data cleaning I'd suggest talking about discrete tasks (eg. find outliers).
 </details>
@@ -153,7 +153,17 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 </details>
 
 <details>
-  <summary><b>13. Try to make your boss redundant.</b></summary> 
+  <summary><b>13. Good communication is not making it possible to be understood, it is making it impossible to be misunderstood.</b></summary> 
+  
+  Clarity in communication and empathy for your audience are evergreen skills for everyone, but are particularly important, challenging, and overlooked for data scientists.
+
+  An important data science meeting typically has stakeholders from across the company with different backgrounds, talking about complex topics at some level of abstraction. It is very easy for people to use the same word to mean different things, or to use words with a lot of assumed knowledge that listeners won't have.  You should be proactive about defining terms used and asking for clarification on terms that other people are using.  
+
+  Great interdisciplinary data scientists change their communication style & content according to their audience: abstracing away computational details to focus on strategic principles of the model when talking to end users, or focusing on the data pipeline to troubleshoot with a data engineer.  Communicate your message in the language your audience understands rather than leaving a layer of interpretation inside your audience's head from what-you-said to what-they-care-about.
+</details>
+
+<details>
+  <summary><b>14. Try to make your boss redundant.</b></summary> 
   
   Which could be rephrased as “anticipate your boss’ needs”. This is not a data science specific rule, but is important enough to include regardless.
 
@@ -162,11 +172,6 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 
 
 
-<details>
-  <summary><b>Template.</b></summary> 
-  
-  Explanatory text
-</details>
 
 
 
