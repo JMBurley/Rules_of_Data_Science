@@ -153,7 +153,19 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 </details>
 
 <details>
-  <summary><b>13. Good communication is not making it possible to be understood, it is making it impossible to be misunderstood.</b></summary> 
+  <summary><b>13. Be proactive, not reactive.</b></summary> 
+  
+  It is common for data scientists to work in areas of uncertainty where we lack sufficient context, particularly when new or inexperienced.  The correct response to this is to be proactive about getting the context required or explaining early to stakeholders the lack of context and setting expectations accordingly.  Being reactive and going heads-down on code/analysis with whatever information you happened to be provided initially is worse for everyone.
+
+  More broadly, being proactive and sharing/seeking information is essential to good work within and across teams (this is true for all teams, and is not coder-specific).  If you work at a company where this is difficult or dissuaded it will limit your growth; change your company's practices or look for another job.
+
+  If you are engaged in a project with stakeholder resistance (ie. someone doesn't want it implemented) then being proactive in talking with them and creating a paper trail may, in the best case, solve the resistance where reactive avoidance would not.  In the worst case, the paper trail is an important defense for both the project and your professional reputation.  You should remain a positive collaborator, but be aware that others may not be.
+  
+  Taking the reins and solving problems is clearly better than meekly waiting in a bad state, but the effort required to be proactive make it a discipline that requires continuous work.
+</details>
+
+<details>
+  <summary><b>14. Good communication is not making it possible to be understood, it is making it impossible to be misunderstood.</b></summary> 
   
   Clarity in communication and empathy for your audience are evergreen skills for everyone, but are particularly important, challenging, and overlooked for data scientists.
 
@@ -163,11 +175,11 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 </details>
 
 <details>
-  <summary><b>14. Try to make your boss redundant.</b></summary> 
+  <summary><b>15. Try to make your boss redundant.</b></summary> 
   
   Which could be rephrased as “anticipate your boss’ needs”. This is not a data science specific rule, but is important enough to include regardless.
 
-  Typically your boss will spend some amount of time thinking about your work: verifying correctness, deciding the next priority, tracking timelines, (etc…), and some amount of time doing differentiated work that only she can do:  her own technical work, planning organisation-level resources, getting buy-in on projects and removing roadblocks.  The more you can proactively take over the former tasks such that your boss doesn’t have to do them, or you provide curated inputs to make her tasks faster, the better.  This will make you more aware of the context of your work within the larger organisation (always good personal growth) and is commonly aligned with promotion requirements in larger companies.  Plus, if your company is well-organised you are enabling both you and your boss to spend more time on more valuable work.
+  Typically your boss will spend some amount of time thinking about your work: verifying correctness, deciding the next priority, tracking timelines, (etc…), and some amount of time doing differentiated work that only she can do:  her own technical work, planning organisation-level resources, getting buy-in on projects and removing roadblocks.  The more you can proactively take over the former tasks such that your boss doesn’t have to do them, or you provide curated inputs to make her tasks faster, the better.  This will make you more aware of the context of your work within the larger organisation (always good personal growth) and is commonly aligned with promotion requirements in larger companies.  Plus, if your company is well-organised, you are enabling both you and your boss to spend more time on more valuable work.
 </details>
 
 
@@ -179,6 +191,6 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 ## Why should you trust my opinions? 🤔
 You probably shouldn’t trust anyone’s opinions purely from their background (there a [logical fallacy](https://en.wikipedia.org/wiki/Argument_from_authority) about that), but background certainly helps set a baseline expectation of reliability.
 
-I’ve spent >13 years on science, strategy consulting, building models of physical processes, and data science.  My time in strategy consulting was when [“big data” became a thing](https://trends.google.com/trends/explore?date=all&geo=US&q=big%20data) in the early 2010's and I was the frontline consultant doing analysis and creating new methods in my firm.  I have implemented data science projects building prototype AI systems addressing annual revenue in the $50M-1.1B range with several Fortune 500 companies and spoke with CEOs, division heads, and frontline staff to make AI projects with positive ROI within 12 months.  Currently, I am [head of data science at a start-up](https://www.actif.ai/our-story/) with a few million in revenue.  
+I’ve spent >15 years on science, strategy consulting, building models of physical processes, and data science.  My time in strategy consulting was when [“big data” became a thing](https://trends.google.com/trends/explore?date=all&geo=US&q=big%20data) in the early 2010's and I was the frontline consultant doing analysis and creating new methods in my firm.  I have implemented data science projects building prototype AI systems addressing annual revenue in the $50M-1.1B range with several Fortune 500 companies and spoke with CEOs, division heads, and frontline staff to make AI projects with positive ROI within 12 months.  Currently, I am [head of data science at a start-up](https://www.actif.ai/our-story/) with a few million in revenue.  
 
 I also did well on the UK nationally televised TV quiz “University Challenge”. Which sounds like it should be irrelevant, save that the weird brain trick of being good at quizzes is about collating information and synthesising patterns into best guesses,  which is basically what a “Rules of Data Science” is.
