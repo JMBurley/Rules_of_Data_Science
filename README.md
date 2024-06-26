@@ -11,7 +11,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 ## :books: The Rules of Data Science :books:
 [Click to see reasoning behind each rule]
 
-<details>
+<details id="its-decision-science">
   <summary><b>1. You will be better at data science if you think of it as decision science.</b></summary> 
   
   The most important part of data science is the “so what?” of your discovery.  What should be done differently because of this, and how can that change be realised?  Seen this way, **the entire toolkit of data science is focused on making better decisions and changing outcomes**.
