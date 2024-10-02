@@ -121,7 +121,7 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
    - every choice made in data cleaning should be documented;
    - cleaning transforms are as important as feature engineering transforms (they should be reusable, well-commented, and tested).
    
-   PS. It is tempting to demarcate data cleaning as bug catching (removing outliers, bad columns, and imputing missing data), and not diagnostic analystics or deep understanding of data.  To be clear, this rule asserts that there is a continuous chain of understanding from finding outliers to creating features that should not be conceptually split into disparate chunks.  Rather than data cleaning I'd suggest talking about discrete tasks (eg. find outliers).
+   PS. It is tempting to demarcate data cleaning as bug catching (removing outliers, bad columns, and imputing missing data), and not diagnostic analytics or deep understanding of data.  To be clear, this rule asserts that there is a continuous chain of understanding from finding outliers to creating features that should not be conceptually split into disparate chunks.  Rather than data cleaning I'd suggest talking about discrete tasks (eg. find outliers).
 </details>
 
 <details>
@@ -189,8 +189,8 @@ Of course, single-sentence assertions are neither evidence nor a particularly go
 
 
 ## Why should you trust my opinions? 🤔
-You probably shouldn’t trust anyone’s opinions purely from their background (there a [logical fallacy](https://en.wikipedia.org/wiki/Argument_from_authority) about that), but background certainly helps set a baseline expectation of reliability.
+You probably shouldn’t trust anyone’s opinions purely from their background (there is a [logical fallacy](https://en.wikipedia.org/wiki/Argument_from_authority) about that), but background certainly helps set a baseline expectation of reliability.
 
-I’ve spent >15 years on science, strategy consulting, building models of physical processes, and data science.  My time in strategy consulting was when [“big data” became a thing](https://trends.google.com/trends/explore?date=all&geo=US&q=big%20data) in the early 2010's and I was the frontline consultant doing analysis and creating new methods in my firm.  I have implemented data science projects building prototype AI systems addressing annual revenue in the $50M-1.1B range with several Fortune 500 companies and spoke with CEOs, division heads, and frontline staff to make AI projects with positive ROI within 12 months.  Currently, I am [head of data science at a start-up](https://www.actif.ai/our-story/) with a few million in revenue.  
+I’ve spent >15 years on science, strategy consulting, building models of physical processes, data science and making new products.  My time in strategy consulting was when [“big data” became a thing](https://trends.google.com/trends/explore?date=all&geo=US&q=big%20data) in the early 2010's and I was the frontline consultant doing analysis and creating new methods in my firm.  I have implemented data science projects building prototype AI systems addressing annual revenue in the $50M-1.1B range with several Fortune 500 companies and spoke with CEOs, division heads, and frontline staff to make AI projects with positive ROI within 12 months.  I co-founded an [AI SaaS start-up](https://www.actif.ai/our-story/) through a few million in revenue and profitability.  Currently, I am a AI director in a market-leading company, extending a best-in-class product suite with data science and AI.
 
-I also did well on the UK nationally televised TV quiz “University Challenge”. Which sounds like it should be irrelevant, save that the weird brain trick of being good at quizzes is about collating information and synthesising patterns into best guesses,  which is basically what a “Rules of Data Science” is.
+I also did well on the UK nationally-televised TV quiz “University Challenge”. Which sounds like it should be irrelevant, save that the weird brain trick of being good at quizzes is about collating information and synthesising patterns into best guesses,  which is basically what a “Rules of Data Science” is.
